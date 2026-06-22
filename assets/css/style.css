@@ -7,5 +7,80 @@ html {
 }
 
 body {
+  font-size: 1.6rem; /* Khôi phục lại cỡ chữ mặc định theo rem */
+  height: 10000px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*============Thuộc tính áp dụng chung cho toàn size============ */
+.main_content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+
+/*============================header============================ */
+
+.header {
+  background: #fffcf4;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+
+.btn {
+  display: block;
+  background-color: #171100;
+  min-width: 118px;
+  line-height: 50px;
+  padding: 0px 16px;
+  color: #fff;
   font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+  text-align: center;
+}
+
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+  position: relative;
+}
+
+.nav a:hover,
+.nav li.active a {
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+  display: block;
+  content: "";
+  width: 1.2rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+  background: #171100;
+  position: absolute;
+  left: 21px;
+}
+
+.header .btn_action {
+  min-width: 14.4rem;
 }
